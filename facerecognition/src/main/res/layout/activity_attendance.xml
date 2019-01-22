@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/applogog" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="DMIA Bio-Attendance"
+            android:textColor="#3e3e3e"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emploee_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#3e3e3e"
+            android:hint="Enter Employee ID"
+            android:textColorLink="#3e3e3e">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/emploee_id"
+            android:layout_alignRight="@+id/emploee_id"
+            android:layout_alignTop="@+id/emploee_id"
+            android:paddingBottom="5dp"
+            android:src="@drawable/rightarrow" />
+
+    </RelativeLayout>
+
+    <!--<ViewSwitcher-->
+    <!--android:id="@+id/main_switcher"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/fngrbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_finger_print" />
+
+        <ImageView
+
+            android:id="@+id/cambtn"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/camera" />
+    </LinearLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/pin_et"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="Passcode"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="4"-->
+    <!--android:minEms="8" />-->
+    <!--</ViewSwitcher>-->
+
+    <TextView
+        android:id="@+id/auth_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/go_to_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Open Settings"
+        android:textColor="@android:color/holo_blue_dark" />
+</LinearLayout>
