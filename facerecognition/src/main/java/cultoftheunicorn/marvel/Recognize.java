@@ -527,9 +527,17 @@ public class Recognize extends AppCompatActivity implements CameraBridgeViewBase
     }
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
+
+
+//        mOpenCvCameraView.disableView();
+////        mLoaderCallback.onManagerConnected(0);
+//        mHandler.removeCallbacksAndMessages(null);
+//
+//
+//
+//        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        startActivity(intent);
     }
 }
